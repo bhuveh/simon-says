@@ -1,0 +1,281 @@
+.gamebox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+
+.circle {
+  background-color: #202020;
+  border-radius: 100%;
+}
+.out {
+  position: relative;
+  z-index: 1;
+  height: 500px;
+  width: 500px;
+}
+.quarter {
+  margin: 0px;
+  position: relative;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+  height: 230px;
+  width: 230px;
+  float: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-style: solid;
+  border-color: #202020;
+}
+#q1 {
+  border-radius: 100% 0% 0% 0%;
+  background-color: #FF6961;
+  border-right-width: 10px;
+  border-bottom-width: 10px;
+}
+#q1.jqhover {
+  background-color: #B23932;
+}
+
+#q2 {
+  border-radius: 0% 100% 0% 0%;
+  background-color: #FDFD96;
+  border-left-width: 10px;
+  border-bottom-width: 10px;
+}
+#q2.jqhover {
+ background-color: #BDBD70;
+}
+#q4 {
+  border-radius: 0% 0% 0% 100%;
+  background-color: #77DD77;
+  border-right-width: 10px;
+  border-top-width: 10px;
+}
+#q4.jqhover {
+ background-color: #559D55;
+}
+#q3 {
+  border-radius: 0% 0% 100% 0%;
+  background-color: #779ECB;
+  border-left-width: 10px;
+  border-top-width: 10px;
+}
+#q3.jqhover {
+ background-color: #526C8B;
+}
+.in {
+  position: relative;
+  z-index: 3;
+  top: 175px;
+  left: 175px;
+  height: 150px;
+  width: 150px;
+  overflow: none;
+}
+.rectangle {
+  position: relative;
+  z-index: 0;
+  top: -500px;
+  height: 500px;
+  width: 1000px;
+  background-color: #202020;
+  border-radius: 250px 250px 250px 250px; 
+}
+.disp-box {
+  position: relative;
+  width: 40%;
+  height: 80%;
+  margin: 5% 10% 5% 0%;
+  float: right;
+}
+.title {
+  position: relative;
+  padding-top: 50px;
+  text-align: center;
+  font-family: 'Bubblegum Sans', cursive;  
+  font-size: 100px;
+  color: #FFFFFF;
+}
+.switch-label {
+  position: relative;
+  display: inline-block;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 15px;
+  color: white;
+}
+.on-off {
+  display: inline;
+}
+.switch {
+  background-color: #474747;
+  display: inline-block;
+  width: 40px;
+  height: 18px;
+  position: relative;
+  top: 5px;
+}
+.switch-2 {
+  width: 18px;
+  height: 18px;
+  background-color: #FF6961;
+}
+.switch-2:hover {
+  cursor: pointer;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.count-disp {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100px;
+  height: 50px;
+  background-color: #999999;
+  text-align: center;
+  font-family: 'Gruppo', monospace;
+  font-size: 50px;
+  color: #000000;
+  font-weight: 600;
+}
+.buttons {
+  width: 50%;
+  position: relative;
+  top: 85px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 14px;
+  color: #000;
+}
+.but {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+}
+.but:active {
+  transform: translateY(1px);
+}
+.but:hover {
+  cursor:pointer;
+}
+.start {
+  background-color: #77DD77;
+}
+.light {
+  height: 12px;
+  width: 12px;
+  border: solid 2px black;
+}
+
+.st-off {
+  background-color: #620500;
+}
+
+.st-on {
+  background-color: red;
+}
+
+.strict {
+  background-color: #77DD77;
+  margin-left: -30px;
+}
+
+@media(max-width:1024px) {
+  .out {
+    height: 250px;
+    width: 250px;
+  }
+  .quarter {
+    top: 10px;
+    left: 10px;
+    height: 115px;
+    width: 115px;
+  }
+  #q1 {
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+  }
+  #q2 {
+    border-left-width: 5px;
+    border-bottom-width: 5px;
+  }
+  #q4 {
+    border-right-width: 5px;
+    border-top-width: 5px;
+  }
+  #q3 {
+    border-left-width: 5px;
+    border-top-width: 5px;
+  }  
+  .in {
+    top: 87.5px;
+    left: 87.5px;
+    height: 75px;
+    width: 75px;
+  }
+  .rectangle {
+    top: -250px;
+    height: 250px;
+    width: 500px;
+    border-radius: 125px 125px 125px 125px; 
+  }
+  .title {
+    padding-top: 25px;
+    font-size: 50px;
+  }
+  .switch-label {
+    top: 10px;
+    font-size: 7.5px;
+  }
+  .switch {
+    width: 20px;
+    height: 9px;
+    top: 2.5px;
+  }
+  .switch-2 {
+    width: 9px;
+    height: 9px;
+  }
+  .count-disp {
+    top: 25px;
+    width: 50px;
+    height: 25px;
+    font-size: 25px;
+  }
+  .buttons {
+    top: 42.5px;
+    font-size: 7px;
+  }
+  .but {
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+  }
+  .light {
+    height: 6px;
+    width: 6px;
+    border: solid 1px black;
+  }
+  .strict {
+    margin-left: -15px;
+  }
+}

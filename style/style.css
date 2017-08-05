@@ -2,7 +2,9 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -25%);
+  -webkit-transform: translate(-50%, -25%);
+      -ms-transform: translate(-50%, -25%);
+          transform: translate(-50%, -25%);
 }
 
 .circle {
@@ -105,7 +107,9 @@
   display: inline-block;
   top: 20px;
   left: 50%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   font-family: 'Share Tech Mono', monospace;
   font-size: 15px;
   color: white;
@@ -139,7 +143,9 @@
   position: relative;
   top: 50px;
   left: 50%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   width: 100px;
   height: 50px;
   background-color: #999999;
@@ -154,12 +160,21 @@
   position: relative;
   top: 85px;
   left: 50%;
-  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   font-family: 'Share Tech Mono', monospace;
   font-size: 14px;
   color: #000;
@@ -172,7 +187,9 @@
   position: relative;
 }
 .but:active {
-  transform: translateY(1px);
+  -webkit-transform: translateY(1px);
+      -ms-transform: translateY(1px);
+          transform: translateY(1px);
 }
 .but:hover {
   cursor:pointer;
